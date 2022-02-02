@@ -13,6 +13,7 @@
 		5671123527AA7EE7002C8F1C /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5671123427AA7EE7002C8F1C /* GLUT.framework */; };
 		5671124727AA7F07002C8F1C /* libGLTools.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5671124627AA7F07002C8F1C /* libGLTools.a */; };
 		5671124927AA7F29002C8F1C /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5671124827AA7F29002C8F1C /* main.cpp */; };
+		5671125127AA812E002C8F1C /* Triangle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5671124F27AA812E002C8F1C /* Triangle.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,8 @@
 		5671124527AA7EFE002C8F1C /* GLTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLTools.h; sourceTree = "<group>"; };
 		5671124627AA7F07002C8F1C /* libGLTools.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGLTools.a; sourceTree = "<group>"; };
 		5671124827AA7F29002C8F1C /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		5671124F27AA812E002C8F1C /* Triangle.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Triangle.cpp; sourceTree = "<group>"; };
+		5671125027AA812E002C8F1C /* Triangle.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Triangle.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +82,8 @@
 				5671122827AA7ECA002C8F1C /* Main.storyboard */,
 				5671122B27AA7ECA002C8F1C /* LSJOpenGL.entitlements */,
 				5671124827AA7F29002C8F1C /* main.cpp */,
+				5671124F27AA812E002C8F1C /* Triangle.cpp */,
+				5671125027AA812E002C8F1C /* Triangle.hpp */,
 			);
 			path = LSJOpenGL;
 			sourceTree = "<group>";
@@ -193,6 +198,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5671124927AA7F29002C8F1C /* main.cpp in Sources */,
+				5671125127AA812E002C8F1C /* Triangle.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

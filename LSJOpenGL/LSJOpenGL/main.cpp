@@ -6,9 +6,11 @@
 //
 
 #include <stdio.h>
+#include "Triangle.hpp"
 
 //创建main函数
 int main(int argc,char* argv[])
 {
+    triangle(argc, argv);
     return 0;
 }
