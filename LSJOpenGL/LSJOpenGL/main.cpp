@@ -11,6 +11,7 @@
 //创建main函数
 int main(int argc,char* argv[])
 {
+    //渲染一个三角形
     triangle(argc, argv);
     return 0;
 }
