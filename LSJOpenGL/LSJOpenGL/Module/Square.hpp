@@ -1,17 +1,18 @@
 //
-//  Triangle.hpp
+//  Square.hpp
 //  LSJOpenGL
 //
-//  Created by 李世举 on 2022/2/2.
+//  Created by 李世举 on 2022/2/3.
 //
 
-#ifndef Triangle_hpp
-#define Triangle_hpp
+#ifndef Square_hpp
+#define Square_hpp
 
 #include <stdio.h>
+
 #include "ModuleSuperclass.hpp"
 
-class Triangle: public ModuleSuperclass
+class Square: public ModuleSuperclass
 {
 public:
     void modulChangeSize(int w,int h) override;
@@ -20,4 +21,4 @@ public:
     void modulsetupRC() override;
 };
 
-#endif /* Triangle_hpp */
+#endif /* Square_hpp */

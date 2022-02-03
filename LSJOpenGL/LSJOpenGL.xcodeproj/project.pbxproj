@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5634112727ABD5E200EA3BF9 /* Square.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5634112527ABD5E200EA3BF9 /* Square.cpp */; };
 		5671122727AA7ECA002C8F1C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5671122627AA7ECA002C8F1C /* Assets.xcassets */; };
 		5671122A27AA7ECA002C8F1C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5671122827AA7ECA002C8F1C /* Main.storyboard */; };
 		5671123327AA7EDF002C8F1C /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5671123227AA7EDF002C8F1C /* OpenGL.framework */; };
@@ -18,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5634112527ABD5E200EA3BF9 /* Square.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Square.cpp; sourceTree = "<group>"; };
+		5634112627ABD5E200EA3BF9 /* Square.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Square.hpp; sourceTree = "<group>"; };
 		5671121F27AA7EC8002C8F1C /* LSJOpenGL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LSJOpenGL.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5671122627AA7ECA002C8F1C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5671122927AA7ECA002C8F1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -136,6 +139,8 @@
 			children = (
 				5671125327AA824A002C8F1C /* Triangle.hpp */,
 				5671125427AA824A002C8F1C /* Triangle.cpp */,
+				5634112527ABD5E200EA3BF9 /* Square.cpp */,
+				5634112627ABD5E200EA3BF9 /* Square.hpp */,
 			);
 			path = Module;
 			sourceTree = "<group>";
@@ -210,6 +215,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5634112727ABD5E200EA3BF9 /* Square.cpp in Sources */,
 				5671125827AA8BF4002C8F1C /* ModuleSuperclass.cpp in Sources */,
 				5671124927AA7F29002C8F1C /* main.cpp in Sources */,
 				5671125527AA824A002C8F1C /* Triangle.cpp in Sources */,

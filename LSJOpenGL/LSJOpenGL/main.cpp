@@ -8,6 +8,7 @@
 #include <stdio.h>
 #include "Triangle.hpp"
 #include "ModuleSuperclass.hpp"
+#include "Square.hpp"
 
 int moduleSuperShow(int argc, char *argv[]);
 
@@ -17,7 +18,7 @@ int main(int argc,char* argv[])
     return 0;
 }
 
-Triangle modul;
+Square modul;
 
 
 //
