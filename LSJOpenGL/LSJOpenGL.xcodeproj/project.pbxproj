@@ -14,6 +14,7 @@
 		5671124727AA7F07002C8F1C /* libGLTools.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5671124627AA7F07002C8F1C /* libGLTools.a */; };
 		5671124927AA7F29002C8F1C /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5671124827AA7F29002C8F1C /* main.cpp */; };
 		5671125527AA824A002C8F1C /* Triangle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5671125427AA824A002C8F1C /* Triangle.cpp */; };
+		5671125827AA8BF4002C8F1C /* ModuleSuperclass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5671125627AA8BF4002C8F1C /* ModuleSuperclass.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,8 @@
 		5671124827AA7F29002C8F1C /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		5671125327AA824A002C8F1C /* Triangle.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Triangle.hpp; sourceTree = "<group>"; };
 		5671125427AA824A002C8F1C /* Triangle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Triangle.cpp; sourceTree = "<group>"; };
+		5671125627AA8BF4002C8F1C /* ModuleSuperclass.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ModuleSuperclass.cpp; sourceTree = "<group>"; };
+		5671125727AA8BF4002C8F1C /* ModuleSuperclass.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ModuleSuperclass.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +85,8 @@
 				5671122827AA7ECA002C8F1C /* Main.storyboard */,
 				5671122B27AA7ECA002C8F1C /* LSJOpenGL.entitlements */,
 				5671124827AA7F29002C8F1C /* main.cpp */,
+				5671125627AA8BF4002C8F1C /* ModuleSuperclass.cpp */,
+				5671125727AA8BF4002C8F1C /* ModuleSuperclass.hpp */,
 				5671125227AA824A002C8F1C /* Module */,
 			);
 			path = LSJOpenGL;
@@ -205,6 +210,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5671125827AA8BF4002C8F1C /* ModuleSuperclass.cpp in Sources */,
 				5671124927AA7F29002C8F1C /* main.cpp in Sources */,
 				5671125527AA824A002C8F1C /* Triangle.cpp in Sources */,
 			);

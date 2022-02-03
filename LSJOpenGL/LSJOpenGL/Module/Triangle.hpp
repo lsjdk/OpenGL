@@ -7,9 +7,17 @@
 
 #ifndef Triangle_hpp
 #define Triangle_hpp
+#include "ModuleSuperclass.hpp"
 
 #include <stdio.h>
 
-int triangle(int argc,char *argv[]);
+class Triangle: public ModuleSuperclass
+{
+public:
+    void modulChangeSize(int w,int h) override;
+    void modulRenderScene() override;
+    void modulSpecialKeys(int key, int x, int y) override;
+    void modulsetupRC() override;
+};
 
 #endif /* Triangle_hpp */
