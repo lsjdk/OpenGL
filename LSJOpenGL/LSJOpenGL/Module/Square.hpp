@@ -11,14 +11,14 @@
 #include <stdio.h>
 
 #include "ModuleSuperclass.hpp"
-
+//移动的四边形
 class Square: public ModuleSuperclass
 {
 public:
     void modulChangeSize(int w,int h) override;
     void modulRenderScene() override;
     void modulSpecialKeys(int key, int x, int y) override;
-    void modulsetupRC() override;
+    void modulSetupRC() override;
 };
 
 #endif /* Square_hpp */

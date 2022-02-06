@@ -20,6 +20,9 @@ void ModuleSuperclass :: modulSpecialKeys(int key, int x, int y) {
     
 }
 
-void ModuleSuperclass :: modulsetupRC() {
+void ModuleSuperclass :: modulSetupRC() {
+    
+}
+void ModuleSuperclass :: modulKeyPressFunc(unsigned char key, int x, int y) {
     
 }

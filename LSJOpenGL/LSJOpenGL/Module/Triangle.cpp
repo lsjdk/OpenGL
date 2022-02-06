@@ -40,7 +40,7 @@ void Triangle :: modulSpecialKeys(int key, int x, int y) {
     
 }
 
-void Triangle :: modulsetupRC() {
+void Triangle :: modulSetupRC() {
     //设置清屏颜色（背景颜色）
     glClearColor(0.98f, 0.40f, 0.7f, 1);
     

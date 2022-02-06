@@ -9,6 +9,7 @@
 #include "Triangle.hpp"
 #include "ModuleSuperclass.hpp"
 #include "Square.hpp"
+#include "Primitive.hpp"
 
 int moduleSuperShow(int argc, char *argv[]);
 
@@ -18,7 +19,7 @@ int main(int argc,char* argv[])
     return 0;
 }
 
-Square modul;
+Primitive modul;
 
 
 //
@@ -35,14 +36,23 @@ Square modul;
 //}
 //
 //
+//根据空格次数。切换不同的“窗口名称”
+void KeyPressFunc(unsigned char key, int x, int y) {
+    modul.modulKeyPressFunc(key, x, y);
+    glutPostRedisplay();
+}
+
 ///*
 // 在窗口大小改变时，接收新的宽度&高度。
 // */
 void changeSize(int w,int h)
 {
+    //防止窗口高度为0
+    if (h == 0)  h = 1;
     /*
      x,y 参数代表窗口中视图的左下角坐标，而宽度、高度是像素为表示，通常x,y 都是为0
      */
+    
     glViewport(0, 0, w, h);
     modul.modulChangeSize(w, h);
 }
@@ -74,7 +84,7 @@ void RenderScene(void) {
 //
 void setupRC() {
     
-    modul.modulsetupRC();
+    modul.modulSetupRC();
 //    //设置清屏颜色（背景颜色）
 //    glClearColor(0.98f, 0.40f, 0.7f, 1);
     
@@ -118,6 +128,8 @@ int moduleSuperShow(int argc, char *argv[]) {
     glutDisplayFunc(RenderScene);
     //注册特殊函数
     glutSpecialFunc(SpecialKeys);
+    //点击空格时，调用的函数
+    glutKeyboardFunc(KeyPressFunc);
     
     /*
      初始化一个GLEW库,确保OpenGL API对程序完全可用。

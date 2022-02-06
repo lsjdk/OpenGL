@@ -22,6 +22,22 @@
 
 
 #include <GLUT/GLUT.h>
+
+#include "GLMatrixStack.h"
+#include "GLFrame.h"
+#include "GLFrustum.h"
+#include "GLBatch.h"
+#include "GLGeometryTransform.h"
+
+//GLShaderManager        shaderManager;
+//GLMatrixStack        modelViewMatrix;
+//GLMatrixStack        projectionMatrix;
+//GLFrame                cameraFrame;
+//GLFrame             objectFrame;
+////投影矩阵
+//GLFrustum            viewFrustum;
+
+
 /*
  在Mac 系统下，`#include<glut/glut.h>`
  在Windows 和 Linux上，我们使用freeglut的静态库版本并且需要添加一个宏
@@ -29,15 +45,31 @@
 class ModuleSuperclass
 {
     public:
+    // 各种需要的类
     //定义一个，着色管理器
     GLShaderManager shaderManager;
     
     //简单的批次容器，是GLTools的一个简单的容器类。
     GLBatch triangleBatch;
+    
+    
+    GLMatrixStack        modelViewMatrix;
+    GLMatrixStack        projectionMatrix;
+    GLFrame                cameraFrame;
+    GLFrame             objectFrame;
+    //投影矩阵
+    GLFrustum            viewFrustum;
+    
+    
+    //几何变换的管道
+    GLGeometryTransform    transformPipeline;
+    M3DMatrix44f        shadowMatrix;
+    
     virtual void modulChangeSize(int w,int h);
     virtual void modulRenderScene();
     virtual void modulSpecialKeys(int key, int x, int y);
-    virtual void modulsetupRC();
+    virtual void modulSetupRC();
+    virtual void modulKeyPressFunc(unsigned char key, int x, int y);
 };
 
 
