@@ -20,7 +20,7 @@ int main(int argc,char* argv[])
     return 0;
 }
 
-FaceCulling modul;
+Square modul;
 
 
 //
@@ -47,8 +47,7 @@ void KeyPressFunc(unsigned char key, int x, int y) {
 ///*
 // 在窗口大小改变时，接收新的宽度&高度。
 // */
-void changeSize(int w,int h)
-{
+void changeSize(int w,int h) {
     //防止窗口高度为0
     if (h == 0)  h = 1;
     /*
@@ -90,7 +89,6 @@ void setupRC() {
 //    //设置清屏颜色（背景颜色）
 //    glClearColor(0.98f, 0.40f, 0.7f, 1);
     
-
 }
 //
 int moduleSuperShow(int argc, char *argv[]) {
@@ -149,10 +147,8 @@ int moduleSuperShow(int argc, char *argv[]) {
      */
     GLenum status = glewInit();
     if (GLEW_OK != status) {
-        
         printf("GLEW Error:%s\n",glewGetErrorString(status));
         return 1;
-        
     }
     
     //设置我们的渲染环境

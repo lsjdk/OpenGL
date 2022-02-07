@@ -12,9 +12,17 @@
 
 #include "ModuleSuperclass.hpp"
 //移动的四边形
+//四边形颜色混合
 class Square: public ModuleSuperclass
 {
 public:
+    
+    GLBatch    squareBatch;
+    GLBatch greenBatch;
+    GLBatch redBatch;
+    GLBatch blueBatch;
+    GLBatch blackBatch;
+    
     void modulChangeSize(int w,int h) override;
     void modulRenderScene() override;
     void modulSpecialKeys(int key, int x, int y) override;

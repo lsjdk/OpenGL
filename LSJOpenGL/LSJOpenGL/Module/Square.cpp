@@ -39,13 +39,51 @@ void Square :: modulRenderScene() {
     
     
         //2.设置一组浮点数来表示红色
-        GLfloat vRed[] = {1.0,0.0,0.0,1.0f};
+//        GLfloat vRed[] = {1.0,0.0,0.0,1.0f};
+//    
+//        //传递到存储着色器，即GLT_SHADER_IDENTITY着色器，这个着色器只是使用指定颜色以默认笛卡尔坐标第在屏幕上渲染几何图形
+//        shaderManager.UseStockShader(GLT_SHADER_IDENTITY,vRed);
+//    
+//        //提交着色器
+//        triangleBatch.Draw();
     
-        //传递到存储着色器，即GLT_SHADER_IDENTITY着色器，这个着色器只是使用指定颜色以默认笛卡尔坐标第在屏幕上渲染几何图形
-        shaderManager.UseStockShader(GLT_SHADER_IDENTITY,vRed);
+    //定义4种颜色
+    GLfloat vRed[] = { 1.0f, 0.0f, 0.0f, 0.5f };
+    GLfloat vGreen[] = { 0.0f, 1.0f, 0.0f, 1.0f };
+    GLfloat vBlue[] = { 0.0f, 0.0f, 1.0f, 1.0f };
+    GLfloat vBlack[] = { 0.0f, 0.0f, 0.0f, 1.0f };
     
-        //提交着色器
-        triangleBatch.Draw();
+    //召唤场景的时候，将4个固定矩形绘制好
+    //使用 单位着色器
+    //参数1：简单的使用默认笛卡尔坐标系（-1，1），所有片段都应用一种颜色。GLT_SHADER_IDENTITY
+    //参数2：着色器颜色
+    shaderManager.UseStockShader(GLT_SHADER_IDENTITY, vGreen);
+    greenBatch.Draw();
+    
+    shaderManager.UseStockShader(GLT_SHADER_IDENTITY, vRed);
+    redBatch.Draw();
+    
+    shaderManager.UseStockShader(GLT_SHADER_IDENTITY, vBlue);
+    blueBatch.Draw();
+    
+    shaderManager.UseStockShader(GLT_SHADER_IDENTITY, vBlack);
+    blackBatch.Draw();
+    
+    
+    //组合核心代码
+    //1.开启混合
+    glEnable(GL_BLEND);
+    //2.开启组合函数 计算混合颜色因子
+    glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
+    //3.使用着色器管理器
+    //*使用 单位着色器
+    //参数1：简单的使用默认笛卡尔坐标系（-1，1），所有片段都应用一种颜色。GLT_SHADER_IDENTITY
+    //参数2：着色器颜色
+    shaderManager.UseStockShader(GLT_SHADER_IDENTITY, vRed);
+    //4.容器类开始绘制
+    squareBatch.Draw();
+    //5.关闭混合功能
+    glDisable(GL_BLEND);
 }
 
 void Square :: modulSpecialKeys(int key, int x, int y) {
@@ -128,25 +166,75 @@ void Square :: modulSpecialKeys(int key, int x, int y) {
     vVerts[10] = blockY;
     printf("(%f,%f)\n",vVerts[9],vVerts[10]);
     
-    triangleBatch.CopyVertexData3f(vVerts);
+    squareBatch.CopyVertexData3f(vVerts);
     
 }
 
 void Square :: modulSetupRC() {
-    //设置清屏颜色（背景颜色）
-    glClearColor(0.98f, 0.40f, 0.7f, 1);
+//    //设置清屏颜色（背景颜色）
+//    glClearColor(0.98f, 0.40f, 0.7f, 1);
+//
+//
+//    //没有着色器，在OpenGL 核心框架中是无法进行任何渲染的。初始化一个渲染管理器。
+//    //在前面的课程，我们会采用固管线渲染，后面会学着用OpenGL着色语言来写着色器
+//    shaderManager.InitializeStockShaders();
+//
+//
+//    //指定顶点
+//    //在OpenGL中，三角形是一种基本的3D图元绘图原素。
+//
+//    //修改为GL_TRIANGLE_FAN ，4个顶点
+//    triangleBatch.Begin(GL_TRIANGLE_FAN, 4);
+//    triangleBatch.CopyVertexData3f(vVerts);
+//    triangleBatch.End();
     
     
-    //没有着色器，在OpenGL 核心框架中是无法进行任何渲染的。初始化一个渲染管理器。
-    //在前面的课程，我们会采用固管线渲染，后面会学着用OpenGL着色语言来写着色器
+    
+    glClearColor(1.0f, 1.0f, 1.0f, 1.0f );
     shaderManager.InitializeStockShaders();
+
+    //绘制1个移动矩形
+    squareBatch.Begin(GL_TRIANGLE_FAN, 4);
+    squareBatch.CopyVertexData3f(vVerts);
+    squareBatch.End();
+    
+    //绘制4个固定矩形
+    GLfloat vBlock[] = { 0.25f, 0.25f, 0.0f,
+        0.75f, 0.25f, 0.0f,
+        0.75f, 0.75f, 0.0f,
+        0.25f, 0.75f, 0.0f};
+    
+    greenBatch.Begin(GL_TRIANGLE_FAN, 4);
+    greenBatch.CopyVertexData3f(vBlock);
+    greenBatch.End();
     
     
-    //指定顶点
-    //在OpenGL中，三角形是一种基本的3D图元绘图原素。
- 
-    //修改为GL_TRIANGLE_FAN ，4个顶点
-    triangleBatch.Begin(GL_TRIANGLE_FAN, 4);
-    triangleBatch.CopyVertexData3f(vVerts);
-    triangleBatch.End();
+    GLfloat vBlock2[] = { -0.75f, 0.25f, 0.0f,
+        -0.25f, 0.25f, 0.0f,
+        -0.25f, 0.75f, 0.0f,
+        -0.75f, 0.75f, 0.0f};
+    
+    redBatch.Begin(GL_TRIANGLE_FAN, 4);
+    redBatch.CopyVertexData3f(vBlock2);
+    redBatch.End();
+    
+    
+    GLfloat vBlock3[] = { -0.75f, -0.75f, 0.0f,
+        -0.25f, -0.75f, 0.0f,
+        -0.25f, -0.25f, 0.0f,
+        -0.75f, -0.25f, 0.0f};
+    
+    blueBatch.Begin(GL_TRIANGLE_FAN, 4);
+    blueBatch.CopyVertexData3f(vBlock3);
+    blueBatch.End();
+    
+    
+    GLfloat vBlock4[] = { 0.25f, -0.75f, 0.0f,
+        0.75f, -0.75f, 0.0f,
+        0.75f, -0.25f, 0.0f,
+        0.25f, -0.25f, 0.0f};
+    
+    blackBatch.Begin(GL_TRIANGLE_FAN, 4);
+    blackBatch.CopyVertexData3f(vBlock4);
+    blackBatch.End();
 }
