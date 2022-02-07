@@ -26,3 +26,6 @@ void ModuleSuperclass :: modulSetupRC() {
 void ModuleSuperclass :: modulKeyPressFunc(unsigned char key, int x, int y) {
     
 }
+void ModuleSuperclass :: modulProcessMenu(int value) {
+    
+}

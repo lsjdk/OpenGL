@@ -10,6 +10,7 @@
 #include "ModuleSuperclass.hpp"
 #include "Square.hpp"
 #include "Primitive.hpp"
+#include "FaceCulling.hpp"
 
 int moduleSuperShow(int argc, char *argv[]);
 
@@ -19,7 +20,7 @@ int main(int argc,char* argv[])
     return 0;
 }
 
-Primitive modul;
+FaceCulling modul;
 
 
 //
@@ -30,12 +31,13 @@ Primitive modul;
 //GLBatch triangleBatch;
 //
 //
-//Observer::Observer(Subject *s)
-//{
-//    subject = s;
-//}
-//
-//
+
+//右键菜单栏选项
+void ProcessMenu(int value) {
+    modul.modulProcessMenu(value);
+    glutPostRedisplay();
+}
+
 //根据空格次数。切换不同的“窗口名称”
 void KeyPressFunc(unsigned char key, int x, int y) {
     modul.modulKeyPressFunc(key, x, y);
@@ -130,6 +132,16 @@ int moduleSuperShow(int argc, char *argv[]) {
     glutSpecialFunc(SpecialKeys);
     //点击空格时，调用的函数
     glutKeyboardFunc(KeyPressFunc);
+    
+    //设置右键弹出菜单栏
+    glutCreateMenu(ProcessMenu);
+    glutAddMenuEntry("Toggle depth test",1);
+    glutAddMenuEntry("Toggle cull backface",2);
+    glutAddMenuEntry("Set Fill Mode", 3);
+    glutAddMenuEntry("Set Line Mode", 4);
+    glutAddMenuEntry("Set Point Mode", 5);
+    
+    glutAttachMenu(GLUT_RIGHT_BUTTON);
     
     /*
      初始化一个GLEW库,确保OpenGL API对程序完全可用。
