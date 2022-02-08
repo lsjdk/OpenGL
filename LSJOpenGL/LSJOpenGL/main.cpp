@@ -11,6 +11,7 @@
 #include "Square.hpp"
 #include "Primitive.hpp"
 #include "FaceCulling.hpp"
+#include "AntiAliasing.hpp"
 
 int moduleSuperShow(int argc, char *argv[]);
 
@@ -20,7 +21,7 @@ int main(int argc,char* argv[])
     return 0;
 }
 
-Square modul;
+AntiAliasing modul;
 
 
 //
@@ -111,7 +112,7 @@ int moduleSuperShow(int argc, char *argv[]) {
      --GLUT_STENCIL`：确保我们也会有一个可用的模板缓存区。
      深度、模板测试后面会细致讲到
      */
-    glutInitDisplayMode(GLUT_DOUBLE|GLUT_RGBA|GLUT_DEPTH|GLUT_STENCIL);
+    glutInitDisplayMode(GLUT_DOUBLE|GLUT_RGBA|GLUT_DEPTH|GLUT_STENCIL|GLUT_MULTISAMPLE);
     
     //GLUT窗口大小、窗口标题
     glutInitWindowSize(800, 600);
@@ -133,11 +134,15 @@ int moduleSuperShow(int argc, char *argv[]) {
     
     //设置右键弹出菜单栏
     glutCreateMenu(ProcessMenu);
-    glutAddMenuEntry("Toggle depth test",1);
-    glutAddMenuEntry("Toggle cull backface",2);
-    glutAddMenuEntry("Set Fill Mode", 3);
-    glutAddMenuEntry("Set Line Mode", 4);
-    glutAddMenuEntry("Set Point Mode", 5);
+//    glutAddMenuEntry("Toggle depth test",1);
+//    glutAddMenuEntry("Toggle cull backface",2);
+//    glutAddMenuEntry("Set Fill Mode", 3);
+//    glutAddMenuEntry("Set Line Mode", 4);
+//    glutAddMenuEntry("Set Point Mode", 5);
+    
+    glutAddMenuEntry("Antialiased Rendering",1);
+    glutAddMenuEntry("Normal Rendering",2);
+    glutAttachMenu(GLUT_RIGHT_BUTTON);
     
     glutAttachMenu(GLUT_RIGHT_BUTTON);
     
