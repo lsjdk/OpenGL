@@ -29,3 +29,8 @@ void ModuleSuperclass :: modulKeyPressFunc(unsigned char key, int x, int y) {
 void ModuleSuperclass :: modulProcessMenu(int value) {
     
 }
+
+void ModuleSuperclass :: modulShutdownRC() {
+    
+}
+

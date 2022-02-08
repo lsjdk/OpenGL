@@ -71,6 +71,7 @@ class ModuleSuperclass
     virtual void modulSetupRC();
     virtual void modulKeyPressFunc(unsigned char key, int x, int y);
     virtual void modulProcessMenu(int value);
+    virtual void modulShutdownRC();
 };
 
 

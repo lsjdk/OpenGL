@@ -11,6 +11,10 @@
 		5634112D27AF677F00EA3BF9 /* Primitive.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5634112B27AF677F00EA3BF9 /* Primitive.cpp */; };
 		565BC71027B0B4710059C467 /* FaceCulling.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 565BC70E27B0B4710059C467 /* FaceCulling.cpp */; };
 		565BC71327B107260059C467 /* AntiAliasing.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 565BC71127B107260059C467 /* AntiAliasing.cpp */; };
+		565BC71627B21D620059C467 /* Texture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 565BC71427B21D620059C467 /* Texture.cpp */; };
+		565BC73F27B21E550059C467 /* floor.tga in Resources */ = {isa = PBXBuildFile; fileRef = 565BC73C27B21E540059C467 /* floor.tga */; };
+		565BC74027B21E550059C467 /* brick.tga in Resources */ = {isa = PBXBuildFile; fileRef = 565BC73D27B21E550059C467 /* brick.tga */; };
+		565BC74127B21E550059C467 /* ceiling.tga in Resources */ = {isa = PBXBuildFile; fileRef = 565BC73E27B21E550059C467 /* ceiling.tga */; };
 		5671122727AA7ECA002C8F1C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5671122627AA7ECA002C8F1C /* Assets.xcassets */; };
 		5671123327AA7EDF002C8F1C /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5671123227AA7EDF002C8F1C /* OpenGL.framework */; };
 		5671123527AA7EE7002C8F1C /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5671123427AA7EE7002C8F1C /* GLUT.framework */; };
@@ -29,6 +33,11 @@
 		565BC70F27B0B4710059C467 /* FaceCulling.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = FaceCulling.hpp; sourceTree = "<group>"; };
 		565BC71127B107260059C467 /* AntiAliasing.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AntiAliasing.cpp; sourceTree = "<group>"; };
 		565BC71227B107260059C467 /* AntiAliasing.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = AntiAliasing.hpp; sourceTree = "<group>"; };
+		565BC71427B21D620059C467 /* Texture.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Texture.cpp; sourceTree = "<group>"; };
+		565BC71527B21D620059C467 /* Texture.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Texture.hpp; sourceTree = "<group>"; };
+		565BC73C27B21E540059C467 /* floor.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = floor.tga; sourceTree = "<group>"; };
+		565BC73D27B21E550059C467 /* brick.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = brick.tga; sourceTree = "<group>"; };
+		565BC73E27B21E550059C467 /* ceiling.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = ceiling.tga; sourceTree = "<group>"; };
 		5671121F27AA7EC8002C8F1C /* LSJOpenGL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LSJOpenGL.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5671122627AA7ECA002C8F1C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5671122B27AA7ECA002C8F1C /* LSJOpenGL.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LSJOpenGL.entitlements; sourceTree = "<group>"; };
@@ -70,6 +79,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		565BC73B27B21DF80059C467 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				565BC73D27B21E550059C467 /* brick.tga */,
+				565BC73E27B21E550059C467 /* ceiling.tga */,
+				565BC73C27B21E540059C467 /* floor.tga */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		5671121627AA7EC8002C8F1C = {
 			isa = PBXGroup;
 			children = (
@@ -96,6 +115,7 @@
 				5671124827AA7F29002C8F1C /* main.cpp */,
 				5671125627AA8BF4002C8F1C /* ModuleSuperclass.cpp */,
 				5671125727AA8BF4002C8F1C /* ModuleSuperclass.hpp */,
+				565BC73B27B21DF80059C467 /* Supporting Files */,
 				5671125227AA824A002C8F1C /* Module */,
 			);
 			path = LSJOpenGL;
@@ -153,6 +173,8 @@
 				565BC70F27B0B4710059C467 /* FaceCulling.hpp */,
 				565BC71127B107260059C467 /* AntiAliasing.cpp */,
 				565BC71227B107260059C467 /* AntiAliasing.hpp */,
+				565BC71427B21D620059C467 /* Texture.cpp */,
+				565BC71527B21D620059C467 /* Texture.hpp */,
 			);
 			path = Module;
 			sourceTree = "<group>";
@@ -215,7 +237,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				565BC74127B21E550059C467 /* ceiling.tga in Resources */,
 				5671122727AA7ECA002C8F1C /* Assets.xcassets in Resources */,
+				565BC73F27B21E550059C467 /* floor.tga in Resources */,
+				565BC74027B21E550059C467 /* brick.tga in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -231,6 +256,7 @@
 				565BC71327B107260059C467 /* AntiAliasing.cpp in Sources */,
 				5671125827AA8BF4002C8F1C /* ModuleSuperclass.cpp in Sources */,
 				5671124927AA7F29002C8F1C /* main.cpp in Sources */,
+				565BC71627B21D620059C467 /* Texture.cpp in Sources */,
 				5671125527AA824A002C8F1C /* Triangle.cpp in Sources */,
 				5634112D27AF677F00EA3BF9 /* Primitive.cpp in Sources */,
 			);
@@ -378,6 +404,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/LSJOpenGL/01\\ OpenGL\\ 环境搭建",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				MARKETING_VERSION = 1.0;
@@ -412,6 +439,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/LSJOpenGL/01\\ OpenGL\\ 环境搭建",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				MARKETING_VERSION = 1.0;

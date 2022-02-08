@@ -12,6 +12,7 @@
 #include "Primitive.hpp"
 #include "FaceCulling.hpp"
 #include "AntiAliasing.hpp"
+#include "Texture.hpp"
 
 int moduleSuperShow(int argc, char *argv[]);
 
@@ -21,7 +22,7 @@ int main(int argc,char* argv[])
     return 0;
 }
 
-AntiAliasing modul;
+Texture modul;
 
 
 //
@@ -32,6 +33,12 @@ AntiAliasing modul;
 //GLBatch triangleBatch;
 //
 //
+
+
+//右键菜单栏选项
+void ShutdownRC() {
+    
+}
 
 //右键菜单栏选项
 void ProcessMenu(int value) {
@@ -160,6 +167,8 @@ int moduleSuperShow(int argc, char *argv[]) {
     setupRC();
     
     glutMainLoop();
+    
+    ShutdownRC();
     
     return  0;
     
