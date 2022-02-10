@@ -24,7 +24,7 @@ class ViewController: UIViewController {
     }
 
     @objc func buttonClick(_ sender: Any) {
-        let vc = NewViewController.init()
+        let vc = ChangeBackColor.init()
         self.present(vc, animated: true, completion: nil)
     }
 }
