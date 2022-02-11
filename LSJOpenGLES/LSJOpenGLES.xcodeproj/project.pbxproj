@@ -16,6 +16,10 @@
 		565BC76327B3BB240059C467 /* ChangeBackColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565BC76227B3BB240059C467 /* ChangeBackColor.swift */; };
 		565BC76727B4AEC40059C467 /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565BC76627B4AEC40059C467 /* PhotoViewController.swift */; };
 		565BC76927B4B93A0059C467 /* cTest.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 565BC76827B4B93A0059C467 /* cTest.jpg */; };
+		565BC76B27B510280059C467 /* GLSLViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565BC76A27B510280059C467 /* GLSLViewController.swift */; };
+		565BC76D27B5103C0059C467 /* GLSLView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565BC76C27B5103C0059C467 /* GLSLView.swift */; };
+		5693BAB927B5F593008FAA7E /* GLSLVertex.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 5693BAB827B5F593008FAA7E /* GLSLVertex.vsh */; };
+		5693BABB27B5F5B6008FAA7E /* GLSLFragment.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 5693BABA27B5F5B6008FAA7E /* GLSLFragment.fsh */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +34,10 @@
 		565BC76227B3BB240059C467 /* ChangeBackColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeBackColor.swift; sourceTree = "<group>"; };
 		565BC76627B4AEC40059C467 /* PhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
 		565BC76827B4B93A0059C467 /* cTest.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cTest.jpg; sourceTree = "<group>"; };
+		565BC76A27B510280059C467 /* GLSLViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GLSLViewController.swift; sourceTree = "<group>"; };
+		565BC76C27B5103C0059C467 /* GLSLView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GLSLView.swift; sourceTree = "<group>"; };
+		5693BAB827B5F593008FAA7E /* GLSLVertex.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = GLSLVertex.vsh; sourceTree = "<group>"; };
+		5693BABA27B5F5B6008FAA7E /* GLSLFragment.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = GLSLFragment.fsh; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +76,10 @@
 				565BC75227B3B0C40059C467 /* ViewController.swift */,
 				565BC76227B3BB240059C467 /* ChangeBackColor.swift */,
 				565BC76627B4AEC40059C467 /* PhotoViewController.swift */,
+				565BC76A27B510280059C467 /* GLSLViewController.swift */,
+				565BC76C27B5103C0059C467 /* GLSLView.swift */,
+				5693BAB827B5F593008FAA7E /* GLSLVertex.vsh */,
+				5693BABA27B5F5B6008FAA7E /* GLSLFragment.fsh */,
 				565BC75427B3B0C40059C467 /* Main.storyboard */,
 				565BC75727B3B0C50059C467 /* Assets.xcassets */,
 				565BC75927B3B0C50059C467 /* LaunchScreen.storyboard */,
@@ -137,6 +149,8 @@
 				565BC76927B4B93A0059C467 /* cTest.jpg in Resources */,
 				565BC75B27B3B0C50059C467 /* LaunchScreen.storyboard in Resources */,
 				565BC75827B3B0C50059C467 /* Assets.xcassets in Resources */,
+				5693BABB27B5F5B6008FAA7E /* GLSLFragment.fsh in Resources */,
+				5693BAB927B5F593008FAA7E /* GLSLVertex.vsh in Resources */,
 				565BC75627B3B0C40059C467 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -151,7 +165,9 @@
 				565BC75327B3B0C40059C467 /* ViewController.swift in Sources */,
 				565BC74F27B3B0C40059C467 /* AppDelegate.swift in Sources */,
 				565BC76327B3BB240059C467 /* ChangeBackColor.swift in Sources */,
+				565BC76D27B5103C0059C467 /* GLSLView.swift in Sources */,
 				565BC75127B3B0C40059C467 /* SceneDelegate.swift in Sources */,
+				565BC76B27B510280059C467 /* GLSLViewController.swift in Sources */,
 				565BC76727B4AEC40059C467 /* PhotoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -301,6 +317,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+					"GLES_SILENCE_DEPRECATION=1",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = LSJOpenGLES/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -329,6 +350,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				GCC_PREPROCESSOR_DEFINITIONS = "GLES_SILENCE_DEPRECATION=1";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = LSJOpenGLES/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

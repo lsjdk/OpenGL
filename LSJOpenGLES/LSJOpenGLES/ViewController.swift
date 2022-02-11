@@ -24,7 +24,8 @@ class ViewController: UIViewController {
     }
 
     @objc func buttonClick(_ sender: Any) {
-        let vc = ChangeBackColor.init()
+        let vc = GLSLViewController.init()
+        vc.modalPresentationStyle = .fullScreen
         self.present(vc, animated: true, completion: nil)
     }
 }
