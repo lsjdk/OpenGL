@@ -24,8 +24,8 @@ class ViewController: UIViewController {
     }
 
     @objc func buttonClick(_ sender: Any) {
-        let vc = GLSLViewController.init()
-        vc.modalPresentationStyle = .fullScreen
+        let vc = GLSLPyramidViewController.init()
+//        vc.modalPresentationStyle = .fullScreen
         self.present(vc, animated: true, completion: nil)
     }
 }

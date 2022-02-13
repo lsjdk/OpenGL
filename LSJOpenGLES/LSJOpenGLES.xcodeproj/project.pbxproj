@@ -20,6 +20,11 @@
 		565BC76D27B5103C0059C467 /* GLSLView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565BC76C27B5103C0059C467 /* GLSLView.swift */; };
 		5693BAB927B5F593008FAA7E /* GLSLVertex.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 5693BAB827B5F593008FAA7E /* GLSLVertex.vsh */; };
 		5693BABB27B5F5B6008FAA7E /* GLSLFragment.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 5693BABA27B5F5B6008FAA7E /* GLSLFragment.fsh */; };
+		56D5894927B7527200F79445 /* GLSLPyramidView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D5894827B7527200F79445 /* GLSLPyramidView.swift */; };
+		56D5894B27B7590900F79445 /* GLSLPyramidShaderV.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 56D5894A27B7590900F79445 /* GLSLPyramidShaderV.glsl */; };
+		56D5894D27B7592000F79445 /* GLSLPyramidShaderF.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 56D5894C27B7592000F79445 /* GLSLPyramidShaderF.glsl */; };
+		56D5894F27B762AE00F79445 /* GLSLManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D5894E27B762AE00F79445 /* GLSLManager.swift */; };
+		56D5895127B88E7A00F79445 /* GLSLPyramidViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D5895027B88E7A00F79445 /* GLSLPyramidViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +43,11 @@
 		565BC76C27B5103C0059C467 /* GLSLView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GLSLView.swift; sourceTree = "<group>"; };
 		5693BAB827B5F593008FAA7E /* GLSLVertex.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = GLSLVertex.vsh; sourceTree = "<group>"; };
 		5693BABA27B5F5B6008FAA7E /* GLSLFragment.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = GLSLFragment.fsh; sourceTree = "<group>"; };
+		56D5894827B7527200F79445 /* GLSLPyramidView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GLSLPyramidView.swift; sourceTree = "<group>"; };
+		56D5894A27B7590900F79445 /* GLSLPyramidShaderV.glsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = GLSLPyramidShaderV.glsl; sourceTree = "<group>"; };
+		56D5894C27B7592000F79445 /* GLSLPyramidShaderF.glsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = GLSLPyramidShaderF.glsl; sourceTree = "<group>"; };
+		56D5894E27B762AE00F79445 /* GLSLManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GLSLManager.swift; sourceTree = "<group>"; };
+		56D5895027B88E7A00F79445 /* GLSLPyramidViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GLSLPyramidViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +88,11 @@
 				565BC76627B4AEC40059C467 /* PhotoViewController.swift */,
 				565BC76A27B510280059C467 /* GLSLViewController.swift */,
 				565BC76C27B5103C0059C467 /* GLSLView.swift */,
+				56D5894827B7527200F79445 /* GLSLPyramidView.swift */,
+				56D5895027B88E7A00F79445 /* GLSLPyramidViewController.swift */,
+				56D5894E27B762AE00F79445 /* GLSLManager.swift */,
+				56D5894A27B7590900F79445 /* GLSLPyramidShaderV.glsl */,
+				56D5894C27B7592000F79445 /* GLSLPyramidShaderF.glsl */,
 				5693BAB827B5F593008FAA7E /* GLSLVertex.vsh */,
 				5693BABA27B5F5B6008FAA7E /* GLSLFragment.fsh */,
 				565BC75427B3B0C40059C467 /* Main.storyboard */,
@@ -150,8 +165,10 @@
 				565BC75B27B3B0C50059C467 /* LaunchScreen.storyboard in Resources */,
 				565BC75827B3B0C50059C467 /* Assets.xcassets in Resources */,
 				5693BABB27B5F5B6008FAA7E /* GLSLFragment.fsh in Resources */,
+				56D5894D27B7592000F79445 /* GLSLPyramidShaderF.glsl in Resources */,
 				5693BAB927B5F593008FAA7E /* GLSLVertex.vsh in Resources */,
 				565BC75627B3B0C40059C467 /* Main.storyboard in Resources */,
+				56D5894B27B7590900F79445 /* GLSLPyramidShaderV.glsl in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -163,8 +180,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				565BC75327B3B0C40059C467 /* ViewController.swift in Sources */,
+				56D5895127B88E7A00F79445 /* GLSLPyramidViewController.swift in Sources */,
 				565BC74F27B3B0C40059C467 /* AppDelegate.swift in Sources */,
 				565BC76327B3BB240059C467 /* ChangeBackColor.swift in Sources */,
+				56D5894927B7527200F79445 /* GLSLPyramidView.swift in Sources */,
+				56D5894F27B762AE00F79445 /* GLSLManager.swift in Sources */,
 				565BC76D27B5103C0059C467 /* GLSLView.swift in Sources */,
 				565BC75127B3B0C40059C467 /* SceneDelegate.swift in Sources */,
 				565BC76B27B510280059C467 /* GLSLViewController.swift in Sources */,

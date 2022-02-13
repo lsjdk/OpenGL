@@ -25,7 +25,6 @@ class ChangeBackColor: GLKViewController {
         //注意：这里需要把stroyBoard记得添加为GLKView
         
         let kview = self.view as! GLKView
-        kview.delegate
         //context
         /*
          
