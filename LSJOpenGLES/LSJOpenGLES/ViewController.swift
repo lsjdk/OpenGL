@@ -24,7 +24,7 @@ class ViewController: UIViewController {
     }
 
     @objc func buttonClick(_ sender: Any) {
-        let vc = GLSLPyramidViewController.init()
+        let vc = EarthAndMoonViewController.init()
 //        vc.modalPresentationStyle = .fullScreen
         self.present(vc, animated: true, completion: nil)
     }

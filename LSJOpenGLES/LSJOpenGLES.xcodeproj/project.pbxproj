@@ -20,11 +20,21 @@
 		565BC76D27B5103C0059C467 /* GLSLView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565BC76C27B5103C0059C467 /* GLSLView.swift */; };
 		5693BAB927B5F593008FAA7E /* GLSLVertex.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 5693BAB827B5F593008FAA7E /* GLSLVertex.vsh */; };
 		5693BABB27B5F5B6008FAA7E /* GLSLFragment.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 5693BABA27B5F5B6008FAA7E /* GLSLFragment.fsh */; };
+		56B40DC727B9E85900FD2F47 /* DrawingBoardShaderV.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 56B40DC627B9E85900FD2F47 /* DrawingBoardShaderV.glsl */; };
+		56B40DC927B9E87400FD2F47 /* DrawingBoardShaderF.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 56B40DC827B9E87400FD2F47 /* DrawingBoardShaderF.glsl */; };
+		56B40DCB27B9EBFA00FD2F47 /* abc.string in Resources */ = {isa = PBXBuildFile; fileRef = 56B40DCA27B9EBFA00FD2F47 /* abc.string */; };
+		56B40DCD27BA418C00FD2F47 /* EarthAndMoonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B40DCC27BA418C00FD2F47 /* EarthAndMoonViewController.swift */; };
+		56B40DD027BA43AB00FD2F47 /* Earth512x256.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 56B40DCE27BA43AA00FD2F47 /* Earth512x256.jpg */; };
+		56B40DD127BA43AB00FD2F47 /* Moon256x128.png in Resources */ = {isa = PBXBuildFile; fileRef = 56B40DCF27BA43AB00FD2F47 /* Moon256x128.png */; };
+		56B40DD427BA43C500FD2F47 /* sphere.obj in Resources */ = {isa = PBXBuildFile; fileRef = 56B40DD327BA43C500FD2F47 /* sphere.obj */; };
+		56B40DD627BA4A8100FD2F47 /* sphere.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B40DD527BA4A8100FD2F47 /* sphere.swift */; };
 		56D5894927B7527200F79445 /* GLSLPyramidView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D5894827B7527200F79445 /* GLSLPyramidView.swift */; };
 		56D5894B27B7590900F79445 /* GLSLPyramidShaderV.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 56D5894A27B7590900F79445 /* GLSLPyramidShaderV.glsl */; };
 		56D5894D27B7592000F79445 /* GLSLPyramidShaderF.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 56D5894C27B7592000F79445 /* GLSLPyramidShaderF.glsl */; };
 		56D5894F27B762AE00F79445 /* GLSLManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D5894E27B762AE00F79445 /* GLSLManager.swift */; };
 		56D5895127B88E7A00F79445 /* GLSLPyramidViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D5895027B88E7A00F79445 /* GLSLPyramidViewController.swift */; };
+		56D5895527B8F7CB00F79445 /* DrawingBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D5895427B8F7CB00F79445 /* DrawingBoardViewController.swift */; };
+		56D5895727B8F82700F79445 /* DrawingBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D5895627B8F82700F79445 /* DrawingBoardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,11 +53,22 @@
 		565BC76C27B5103C0059C467 /* GLSLView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GLSLView.swift; sourceTree = "<group>"; };
 		5693BAB827B5F593008FAA7E /* GLSLVertex.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = GLSLVertex.vsh; sourceTree = "<group>"; };
 		5693BABA27B5F5B6008FAA7E /* GLSLFragment.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = GLSLFragment.fsh; sourceTree = "<group>"; };
+		56B40DC627B9E85900FD2F47 /* DrawingBoardShaderV.glsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = DrawingBoardShaderV.glsl; sourceTree = "<group>"; };
+		56B40DC827B9E87400FD2F47 /* DrawingBoardShaderF.glsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = DrawingBoardShaderF.glsl; sourceTree = "<group>"; };
+		56B40DCA27B9EBFA00FD2F47 /* abc.string */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = abc.string; sourceTree = "<group>"; };
+		56B40DCC27BA418C00FD2F47 /* EarthAndMoonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthAndMoonViewController.swift; sourceTree = "<group>"; };
+		56B40DCE27BA43AA00FD2F47 /* Earth512x256.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Earth512x256.jpg; sourceTree = "<group>"; };
+		56B40DCF27BA43AB00FD2F47 /* Moon256x128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Moon256x128.png; sourceTree = "<group>"; };
+		56B40DD227BA43C500FD2F47 /* sphere.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sphere.h; sourceTree = "<group>"; };
+		56B40DD327BA43C500FD2F47 /* sphere.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sphere.obj; sourceTree = "<group>"; };
+		56B40DD527BA4A8100FD2F47 /* sphere.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sphere.swift; sourceTree = "<group>"; };
 		56D5894827B7527200F79445 /* GLSLPyramidView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GLSLPyramidView.swift; sourceTree = "<group>"; };
 		56D5894A27B7590900F79445 /* GLSLPyramidShaderV.glsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = GLSLPyramidShaderV.glsl; sourceTree = "<group>"; };
 		56D5894C27B7592000F79445 /* GLSLPyramidShaderF.glsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = GLSLPyramidShaderF.glsl; sourceTree = "<group>"; };
 		56D5894E27B762AE00F79445 /* GLSLManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GLSLManager.swift; sourceTree = "<group>"; };
 		56D5895027B88E7A00F79445 /* GLSLPyramidViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GLSLPyramidViewController.swift; sourceTree = "<group>"; };
+		56D5895427B8F7CB00F79445 /* DrawingBoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingBoardViewController.swift; sourceTree = "<group>"; };
+		56D5895627B8F82700F79445 /* DrawingBoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingBoardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +112,17 @@
 				56D5894827B7527200F79445 /* GLSLPyramidView.swift */,
 				56D5895027B88E7A00F79445 /* GLSLPyramidViewController.swift */,
 				56D5894E27B762AE00F79445 /* GLSLManager.swift */,
+				56D5895427B8F7CB00F79445 /* DrawingBoardViewController.swift */,
+				56B40DC627B9E85900FD2F47 /* DrawingBoardShaderV.glsl */,
+				56B40DC827B9E87400FD2F47 /* DrawingBoardShaderF.glsl */,
+				56B40DCA27B9EBFA00FD2F47 /* abc.string */,
+				56D5895627B8F82700F79445 /* DrawingBoardView.swift */,
+				56B40DCC27BA418C00FD2F47 /* EarthAndMoonViewController.swift */,
+				56B40DCE27BA43AA00FD2F47 /* Earth512x256.jpg */,
+				56B40DCF27BA43AB00FD2F47 /* Moon256x128.png */,
+				56B40DD227BA43C500FD2F47 /* sphere.h */,
+				56B40DD527BA4A8100FD2F47 /* sphere.swift */,
+				56B40DD327BA43C500FD2F47 /* sphere.obj */,
 				56D5894A27B7590900F79445 /* GLSLPyramidShaderV.glsl */,
 				56D5894C27B7592000F79445 /* GLSLPyramidShaderF.glsl */,
 				5693BAB827B5F593008FAA7E /* GLSLVertex.vsh */,
@@ -161,12 +193,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56B40DD427BA43C500FD2F47 /* sphere.obj in Resources */,
 				565BC76927B4B93A0059C467 /* cTest.jpg in Resources */,
+				56B40DCB27B9EBFA00FD2F47 /* abc.string in Resources */,
 				565BC75B27B3B0C50059C467 /* LaunchScreen.storyboard in Resources */,
 				565BC75827B3B0C50059C467 /* Assets.xcassets in Resources */,
+				56B40DC727B9E85900FD2F47 /* DrawingBoardShaderV.glsl in Resources */,
 				5693BABB27B5F5B6008FAA7E /* GLSLFragment.fsh in Resources */,
 				56D5894D27B7592000F79445 /* GLSLPyramidShaderF.glsl in Resources */,
 				5693BAB927B5F593008FAA7E /* GLSLVertex.vsh in Resources */,
+				56B40DD127BA43AB00FD2F47 /* Moon256x128.png in Resources */,
+				56B40DD027BA43AB00FD2F47 /* Earth512x256.jpg in Resources */,
+				56B40DC927B9E87400FD2F47 /* DrawingBoardShaderF.glsl in Resources */,
 				565BC75627B3B0C40059C467 /* Main.storyboard in Resources */,
 				56D5894B27B7590900F79445 /* GLSLPyramidShaderV.glsl in Resources */,
 			);
@@ -179,12 +217,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56D5895727B8F82700F79445 /* DrawingBoardView.swift in Sources */,
 				565BC75327B3B0C40059C467 /* ViewController.swift in Sources */,
 				56D5895127B88E7A00F79445 /* GLSLPyramidViewController.swift in Sources */,
 				565BC74F27B3B0C40059C467 /* AppDelegate.swift in Sources */,
 				565BC76327B3BB240059C467 /* ChangeBackColor.swift in Sources */,
+				56B40DCD27BA418C00FD2F47 /* EarthAndMoonViewController.swift in Sources */,
 				56D5894927B7527200F79445 /* GLSLPyramidView.swift in Sources */,
 				56D5894F27B762AE00F79445 /* GLSLManager.swift in Sources */,
+				56B40DD627BA4A8100FD2F47 /* sphere.swift in Sources */,
+				56D5895527B8F7CB00F79445 /* DrawingBoardViewController.swift in Sources */,
 				565BC76D27B5103C0059C467 /* GLSLView.swift in Sources */,
 				565BC75127B3B0C40059C467 /* SceneDelegate.swift in Sources */,
 				565BC76B27B510280059C467 /* GLSLViewController.swift in Sources */,
